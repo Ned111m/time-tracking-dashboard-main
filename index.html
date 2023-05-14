@@ -1,115 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
- <link rel="stylesheet" href="style.css" />
-  <title>Frontend Mentor | Time tracking dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
+    <title>Frontend Mentor | Time tracking dashboard</title>
 
-</head>
-<body>
-<div class="container">
-  
-  <div class="card">
-    <div class="card-photo">
-    <img src="/images/image-jeremy.png" alt="Jeremy Robson" />
-  
-  <span class="span">Report for</span>
-  <h1 class="h1">Jeremy Robson</h1>
+    <!-- CSS -->
+    <link rel="stylesheet" xml:lang="en" href="/style.css" />
 
-  <div class="card-photo-bottom">
-    
-  </div>
-</div>
-    
-    <button>Daily</button>
-    
-    <button>Weekly</button>
-    
-    <button>Monthly</button>
-    
-  </div>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
- <div class="card-work">
-  <img src="/images/icon-work.svg" alt="Work" srcset="" />
-  <h2 class="h2">Work<img src="/images/icon-ellipsis.svg" alt="icon-ellipsis" /></h2>
-  <div class="daily-hrs">5hrs <!-- daily --></div>
-  <div class="previous-daily">Previous - 7hrs <!-- daily --></div>
-  <div class="weekly-hrs">32hrs <!-- weekly --></div>
-  <div class="previous-weekly">Previous - 36hrs <!-- weekly --></div>
-  <div class="monthly-hrs">103hrs <!-- monthly --></div>
-  <div class="previous-monthly">Previous - 128hrs <!-- monthly --></div>
-</div> 
+  <body>
+    <main>
+      <div class="container">
+        <div class="report-perfil-container">
+          <div class="report-perfil">
+            <img src="images/image-jeremy.png" alt="" />
+            <div>
+              <p class="small-text text-muted">Report for</p>
+              <p class="big-text">Jeremy Robson</p>
+            </div>
+          </div>
 
-<div class="card-play">
-  <img src="/images/icon-play.svg" alt="Play" srcset="">
-  <h2 class="h2">Play<img src="/images/icon-ellipsis.svg" alt="icon-ellipsis" /></h2>
-  <div class="daily-hrs">1hr <!-- daily --></div> 
-  <div class="previous-daily">Previous - 2hrs <!-- daily --></div>
-  <div class="weekly-hrs">10hrs <!-- weekly --></div>
-  <div class="previous-weekly">Previous - 8hrs <!-- weekly --></div>
-  <div class="monthly-hrs">23hrs <!-- monthly --></div>
-  <div class="previous-monthly">Previous - 29hrs <!-- monthly --></div>
-</div>
+          <div class="time-option">
+            <button id="daily-btn" class="text-muted">Daily</button>
+            <button id="weekly-btn" class="text-muted">Weekly</button>
+            <button id="monthly-btn" class="text-muted">Monthly</button>
+          </div>
+        </div>
 
-<div class="card-study">
-  <img src="/images/icon-study.svg" alt="Study" srcset="">
-  <h2 class="h2">Study<img src="/images/icon-ellipsis.svg" alt="icon-ellipsis" /></h2>
-  <div class="daily-hrs">0hrs <!-- daily --></div>
-  <div class="previous-daily">Previous - 1hr <!-- daily --></div>
-  <div class="weekly-hrs">4hrs <!-- weekly --></div>
-  <div class="previous-weekly">Previous - 7hrs <!-- weekly --></div>
-  <div class="monthly-hrs">13hrs <!-- monthly --></div>
-  <div class="previous-monthly">Previous - 19hrs <!-- monthly --></div>
-</div>
+        <div class="reports-container">
+          <div class="work">
+            <div class="portada"></div>
+            <div class="report-information">
+              <div class="title">
+                <p>Work</p>
+                <p class="text-muted">···</p>
+              </div>
+              <h2 class="hours">7hrs</h2>
+              <p class="last-time">Select Time Tracking</p>
+            </div>
+          </div>
 
-<div class="card-exercise">
-  <img src="/images/icon-exercise.svg" alt="Exercise" srcset="">
-  <h2 class="h2">Exercise<img src="/images/icon-ellipsis.svg" alt="icon-ellipsis" /></h2>
-  <div class="daily-hrs">1hr <!-- daily --></div>
-  <div class="previous-daily">Previous - 1hr <!-- daily --></div>
-  <div class="weekly-hrs">4hrs <!-- weekly --></div>
-  <div class="previous-weekly">Previous - 5hrs <!-- weekly --></div>
-  <div class="monthly-hrs">11hrs <!-- monthly --></div>
-  <div class="previous-monthly">Previous - 18hrs <!-- monthly --></div>
-</div>
+          <div class="play">
+            <div class="portada"></div>
+            <div class="report-information">
+              <div class="title">
+                <p>Play</p>
+                <p class="text-muted">···</p>
+              </div>
+              <h2 class="hours">0hrs</h2>
+              <p class="last-time">Select Time Tracking</p>
+            </div>
+          </div>
 
-<div class="card-social">
-  <img src="/images/icon-social.svg" alt="Social" srcset="">
-  <h2 class="h2">Social<img src="/images/icon-ellipsis.svg" alt="icon-ellipsis" /></h2>
-  <div class="daily-hrs">1hr <!-- daily --></div>
-  <div class="previous-daily">Previous - 3hrs <!-- daily --></div>
-  <div class="weekly-hrs">5hrs <!-- weekly --></div>
-  <div class="previous-weekly">Previous - 10hrs <!-- weekly --></div>
-  <div class="monthly-hrs">21hrs <!-- monthly --></div>
-  <div class="previous-monthly">Previous - 23hrs <!-- monthly --></div>
-</div>
+          <div class="study">
+            <div class="portada"></div>
+            <div class="report-information">
+              <div class="title">
+                <p>Study</p>
+                <p class="text-muted">···</p>
+              </div>
+              <h2 class="hours">0hrs</h2>
+              <p class="last-time">Select Time Tracking</p>
+            </div>
+          </div>
 
-<div class="card-self-care">
-  <img src="/images/icon-self-care.svg" alt="Self care" srcset="">
-  <h2 class="h2">Self Care<img src="/images/icon-ellipsis.svg" alt="icon-ellipsis" /></h2>
-  <div class="daily-hrs">0hrs <!-- daily --></div>
-  <div class="previous-daily">Previous - 1hr <!-- daily --></div>
-  <div class="weekly-hrs">2hrs <!-- weekly --></div>
-  <div class="previous-weekly">Previous - 2hrs <!-- weekly --></div>
-  <div class="monthly-hrs">7hrs <!-- monthly --></div>
-  <div class="previous-monthly">Previous - 11hrs <!-- monthly --></div>
-</div>
+          <div class="exercise">
+            <div class="portada"></div>
+            <div class="report-information">
+              <div class="title">
+                <p>Exercise</p>
+                <p class="text-muted">···</p>
+              </div>
+              <h2 class="hours">0hrs</h2>
+              <p class="last-time">Select Time Tracking</p>
+            </div>
+          </div>
 
+          <div class="social">
+            <div class="portada"></div>
+            <div class="report-information">
+              <div class="title">
+                <p>Social</p>
+                <p class="text-muted">···</p>
+              </div>
+              <h2 class="hours">0hrs</h2>
+              <p class="last-time">Select Time Tracking</p>
+            </div>
+          </div>
 
-    </div>  
+          <div class="self-care">
+            <div class="portada"></div>
+            <div class="report-information">
+              <div class="title">
+                <p>Self Care</p>
+                <p class="text-muted">···</p>
+              </div>
+              <h2 class="hours">0hrs</h2>
+              <p class="last-time">Select Time Tracking</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Coded by <a href="https://github.com/Ned111m" target="_blank">Nedim</a>.
+      </div>
+    </main>
+
+    <script src="/index.js"></script>
   </body>
 </html>
-
-<style>
-  .attribution { font-size: 11px; text-align: center; }
-  .attribution a { color: hsl(228, 45%, 44%); }
-</style>
-
-<div class="attribution">
-    Here is my <a href="https://github.com/Ned111m" target="_blank">Github</a>. 
-    Coded by <a href="https://www.linkedin.com/in/nedim-basic-5608b6239/">Ned1m</a>.
-  </div>
