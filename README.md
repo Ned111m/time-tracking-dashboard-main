@@ -1,10 +1,6 @@
-# Frontend Mentor - Time tracking dashboard
+# Frontend Mentor - Time tracking dashboard - Completed
 
-![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
-
-## Welcome! 👋
-
-Thanks for checking out this front-end coding challenge.
+I have successfully completed the QR Code Component Challenge, building a responsive QR code component according to the provided design.
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
